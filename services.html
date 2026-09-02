@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treatments — Aurora Dental Studio</title>
+<meta name="description" content="Eighteen treatments, every price written down. Examinations, hygiene, implants, aligners, veneers, endodontics and children's dentistry in Budapest.">
+<link rel="icon" href="imgs/dental_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:ital,wght@0,300..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/pages.css">
+<script>
+  (function (h) {
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) h.classList.add('motion');
+    try { if (sessionStorage.getItem('aurora.nav') === '1') { h.classList.add('nav-in'); sessionStorage.removeItem('aurora.nav'); } } catch (e) {}
+  })(document.documentElement);
+</script>
+</head>
+<body>
+
+<main>
+
+  <!-- ============================================================ HERO -->
+  <section class="phero">
+    <div class="phero__aur" aria-hidden="true"></div>
+    <div class="shell">
+      <div class="phero__crumb">
+        <a class="label ulink" href="index.html">Home</a>
+        <span class="label" style="color:var(--ink-25)">/</span>
+        <span class="label label--ink">Treatments</span>
+      </div>
+      <div class="phero__grid">
+        <h1 class="phero__t" data-split="words" data-now="1">Eighteen treatments. <em>Eighteen prices.</em></h1>
+        <div class="phero__side">
+          <p class="lead" data-rv="up" data-rv-d=".3">
+            Open any row for what it involves, how long it takes, what is included and who
+            does it. Where a cheaper option would genuinely work, it is named inside.
+          </p>
+          <a class="alink" href="pricing.html" data-rv="up" data-rv-d=".4"><span class="c">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9L9 3M4 3h5v5"/></svg>
+          </span>See the full price list</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ MARQUEE -->
+  <section style="padding-block:clamp(1.4rem,3vw,2.4rem);border-block:1px solid var(--line);margin-top:2rem">
+    <div id="svcMq"></div>
+  </section>
+
+  <!-- ============================================================ LIST -->
+  <section class="sec--sm" style="padding-top:clamp(2.5rem,5vw,4rem)">
+    <div class="shell">
+      <div class="between wrap g2 mb4">
+        <div class="chips" id="svcChips"></div>
+        <span class="count-flag" id="svcCount"></span>
+      </div>
+      <div class="svc" id="svcList"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ COMPARISON -->
+  <section class="sec bone">
+    <div class="shell">
+      <div class="shead mb6">
+        <div class="shead__aside">
+          <span class="label"><span class="dot"></span>Choosing between them</span>
+          <p class="shead__meta">Three ways to change how a front tooth looks, from least to most invasive. We start at the top of this list and only move down when we have to.</p>
+        </div>
+        <h2 class="dsp shead__t" data-split="words">The least we can get away with.</h2>
+      </div>
+
+      <div style="overflow-x:auto">
+        <table class="tbl" style="min-width:680px">
+          <thead>
+            <tr><th>Option</th><th>Tooth removed</th><th>Lasts</th><th>Visits</th><th>Reversible</th><th>From</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><b>Composite bonding</b><div class="xs muted">Resin layered onto the surface</div></td>
+              <td>None</td><td>4–7 years</td><td>1</td><td>Yes</td><td class="num">42 000 Ft</td></tr>
+            <tr><td><b>Porcelain veneer</b><div class="xs muted">Minimal-preparation ceramic</div></td>
+              <td>0.3–0.5 mm</td><td>10–15 years</td><td>2</td><td>No</td><td class="num">210 000 Ft</td></tr>
+            <tr><td><b>Zirconia crown</b><div class="xs muted">Full coverage, for damaged teeth</div></td>
+              <td>1.5–2 mm</td><td>15–20 years</td><td>2</td><td>No</td><td class="num">145 000 Ft</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="note mt4" style="max-width:70ch">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="6.4"/><path d="M8 7.2v4M8 4.9v.1"/></svg>
+        <span>A crown costs less than a veneer and lasts longer — and we will still usually
+        talk you out of it if the tooth is healthy, because of the column that matters most:
+        how much of your own tooth is gone forever.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ SEDATION / ANXIETY -->
+  <section class="sec">
+    <div class="shell">
+      <div class="grid" style="align-items:center">
+        <figure style="grid-column:1/6" class="arch mzoom" data-clip data-cursor="Calm">
+          <img class="cover" style="aspect-ratio:.82"
+               src="https://images.pexels.com/photos/6627325/pexels-photo-6627325.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000"
+               alt="A dentist explaining a treatment to a patient">
+        </figure>
+        <div style="grid-column:7/13">
+          <span class="label"><span class="dot"></span>If you are dreading it</span>
+          <h2 class="mt3" style="font-size:var(--fs-h2)" data-split="words">One in five of our patients tells us they are anxious.</h2>
+          <p class="body-lg mt4 mw-md">
+            Say so when you book and three things change automatically: you get the first slot of the
+            day when the building is quiet, you get a hand signal that stops everything instantly,
+            and nobody narrates the instruments unless you ask them to.
+          </p>
+          <div class="grid mt4" style="grid-template-columns:repeat(2,1fr);gap:1.4rem">
+            <div><div class="bio__k">Oral sedation</div><p class="small muted mt1">A tablet an hour before. You stay awake, you simply stop minding.</p></div>
+            <div><div class="bio__k">IV sedation</div><p class="small muted mt1">For surgery or long appointments. Most people remember nothing at all.</p></div>
+          </div>
+          <a class="alink mt4" href="booking.html"><span class="c">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9L9 3M4 3h5v5"/></svg>
+          </span>Book a first-of-the-day slot</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CTA -->
+  <section class="cta">
+    <div class="cta__aur" aria-hidden="true"></div>
+    <div class="shell cta__in">
+      <h2 class="cta__t" data-split="words">Not sure which one you need? <em>That is the examination.</em></h2>
+      <div class="col g3">
+        <p class="lead" style="color:rgba(255,255,255,.66)">
+          18,000 Ft, forty-five minutes, and the fee comes off whatever you decide to do next.
+        </p>
+        <div class="flex g2 wrap">
+          <span class="mag"><a class="btn btn--white btn--lg" href="booking.html?service=exam">Book an examination
+            <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a></span>
+          <span class="mag"><a class="btn btn--lg" href="contact.html"
+            style="box-shadow:inset 0 0 0 1px rgba(255,255,255,.28);background:transparent">Ask first</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pages.js"></script>
+<script>
+  AURORA.UI.boot('services.html', function () {
+    var mq = document.getElementById('svcMq');
+    if (mq) mq.innerHTML = AURORA.UI.marquee(AURORA.MARQUEE, 'mq--rev');
+    AURORA.pages.services();
+  });
+</script>
+</body>
+</html>

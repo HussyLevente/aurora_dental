@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reviews — Aurora Dental Studio</title>
+<meta name="description" content="4.9 from 1,240 verified reviews on Google, Doctolib and Facebook. Read what Aurora patients say, filter by treatment or studio, and leave your own.">
+<link rel="icon" href="imgs/dental_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:ital,wght@0,300..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/pages.css">
+<script>
+  (function (h) {
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) h.classList.add('motion');
+    try { if (sessionStorage.getItem('aurora.nav') === '1') { h.classList.add('nav-in'); sessionStorage.removeItem('aurora.nav'); } } catch (e) {}
+  })(document.documentElement);
+</script>
+</head>
+<body>
+
+<main>
+
+  <!-- ============================================================ HERO -->
+  <section class="phero">
+    <div class="phero__aur" aria-hidden="true"></div>
+    <div class="shell">
+      <div class="phero__crumb">
+        <a class="label ulink" href="index.html">Home</a>
+        <span class="label" style="color:var(--ink-25)">/</span>
+        <span class="label label--ink">Reviews</span>
+      </div>
+      <div class="phero__grid">
+        <h1 class="phero__t" data-split="words" data-now="1">We never ask. <em>They write anyway.</em></h1>
+        <div class="phero__side">
+          <p class="lead" data-rv="up" data-rv-d=".3">
+            No follow-up texts, no tablet at reception, no incentive of any kind. Everything below
+            was written by someone who chose to sit down and do it, including the four-star ones
+            we have left exactly where they are.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ SUMMARY -->
+  <section class="sec--sm" style="padding-top:clamp(2rem,4vw,3.4rem)">
+    <div class="shell">
+      <div class="rsum" style="padding-top:2rem;border-top:1px solid var(--line)">
+        <div>
+          <div class="rsum__big"><span id="revAvg" data-count="4.9" data-dec="1">0</span><sup>/5</sup></div>
+          <div class="mt3" id="revAvgStars"></div>
+          <p class="small muted mt2" id="revTotal">1,240 verified reviews</p>
+        </div>
+        <div id="revBars"></div>
+        <div>
+          <div class="bio__k mb2">By platform</div>
+          <div class="rsrc" id="revSources"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ LIST -->
+  <section class="sec--sm">
+    <div class="shell">
+      <div class="between wrap g2 mb4" style="padding-top:1.6rem;border-top:1px solid var(--line)">
+        <div class="chips" id="revChips"></div>
+        <div class="flex g2 center">
+          <span class="count-flag" id="revCount"></span>
+          <label class="fld" style="min-width:170px">
+            <select id="revSort">
+              <option value="recent">Most recent</option>
+              <option value="high">Highest rated</option>
+              <option value="low">Lowest rated</option>
+              <option value="oldest">Oldest first</option>
+            </select>
+            <span class="fld__lb" style="transform:translateY(-1.42rem) scale(.68);letter-spacing:.08em;text-transform:uppercase">Sort</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="rgrid" id="revGrid"></div>
+
+      <div class="tc mt6">
+        <button class="btn btn--ghost" id="revMore">Load more reviews
+          <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 2v12M3 9l5 5 5-5"/></svg></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ PULL QUOTE -->
+  <section class="sec night">
+    <div class="shell">
+      <div class="grid" style="align-items:center">
+        <div style="grid-column:1/8">
+          <span class="label"><span class="dot"></span>The one we think about</span>
+          <blockquote class="mt4" style="font-family:var(--display);font-weight:250;
+            font-size:clamp(1.6rem,3.4vw,2.9rem);line-height:1.08;letter-spacing:-.04em" data-split="words">
+            “Two clinics told me I would lose the lower front teeth. At the twelve-week
+            review the pockets had gone from 7mm to 3mm. I still have all of them, two years on.”
+          </blockquote>
+          <p class="small mt4" style="color:rgba(255,255,255,.55)">Daniel Bauer · Periodontal therapy · Aurora Buda</p>
+        </div>
+        <figure style="grid-column:9/13" class="arch" data-clip data-cursor="Aurora Buda">
+          <img class="cover" style="aspect-ratio:.78"
+               src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&amp;fit=crop&amp;q=80&amp;w=900"
+               alt="A smiling patient">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ WRITE ONE -->
+  <section class="sec">
+    <div class="shell">
+      <div class="cgrid">
+        <div>
+          <span class="label"><span class="dot"></span>Leave a review</span>
+          <h2 class="mt3" style="font-size:var(--fs-h2)" data-split="words">Been in? Tell the next person what to expect.</h2>
+          <p class="lead mt3 mw-md">
+            Good or bad — we publish both. Reviews left here appear immediately at the top of
+            the list above, and are stored in your browser until the backend is connected.
+          </p>
+
+          <form id="reviewForm" class="form-grid mt6" novalidate>
+            <div class="span2">
+              <div class="bio__k mb2">Your rating</div>
+              <div class="stars" id="starPick"></div>
+              <span class="fld__err" id="starErr" style="height:auto">Please choose a rating</span>
+            </div>
+
+            <label class="fld"><input type="text" name="name" placeholder=" ">
+              <span class="fld__lb">Your name</span><span class="fld__err"></span></label>
+
+            <label class="fld"><select name="svc" id="revSvc"></select>
+              <span class="fld__lb" style="transform:translateY(-1.42rem) scale(.68);letter-spacing:.08em;text-transform:uppercase">Treatment</span>
+              <span class="fld__err"></span></label>
+
+            <label class="fld span2"><select name="loc" id="revLoc"></select>
+              <span class="fld__lb" style="transform:translateY(-1.42rem) scale(.68);letter-spacing:.08em;text-transform:uppercase">Which studio</span>
+              <span class="fld__err"></span></label>
+
+            <label class="fld span2"><textarea name="text" placeholder=" " rows="5"></textarea>
+              <span class="fld__lb">What happened, and how did it feel?</span>
+              <span class="fld__err"></span></label>
+
+            <div class="span2 flex g2 wrap" style="align-items:center">
+              <span class="mag"><button class="btn" type="submit">Publish my review
+                <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></button></span>
+              <span class="xs muted">Published under the name you give, with the month only.</span>
+            </div>
+          </form>
+        </div>
+
+        <aside class="col g4">
+          <div class="card">
+            <span class="label label--blue"><span class="dot"></span>Our policy</span>
+            <ul class="svc__list mt3">
+              <li>Nothing is deleted for being critical. The four-star reviews stay up.</li>
+              <li>We never offer discounts, prize draws or anything else in exchange.</li>
+              <li>Clinical detail is edited only where it identifies another patient.</li>
+              <li>Complaints get a reply from the clinical director within two working days.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="label"><span class="dot"></span>Something went wrong?</span>
+            <p class="small muted mt3">A review is a slow way to fix a problem. Call the studio and ask
+            for the clinical director — that is a far faster route, and it is genuinely welcome.</p>
+            <a class="alink mt3" href="contact.html"><span class="c">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9L9 3M4 3h5v5"/></svg>
+            </span>Raise it with us directly</a>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CTA -->
+  <section class="cta">
+    <div class="cta__aur" aria-hidden="true"></div>
+    <div class="shell cta__in">
+      <h2 class="cta__t" data-split="words">Sixty-one percent were <em>sent by someone.</em></h2>
+      <div class="col g3">
+        <p class="lead" style="color:rgba(255,255,255,.66)">
+          Which is a slower way to grow a practice than advertising, and a considerably
+          better one.
+        </p>
+        <div class="flex g2 wrap">
+          <span class="mag"><a class="btn btn--white btn--lg" href="booking.html">Book a first visit
+            <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a></span>
+          <span class="mag"><a class="btn btn--lg" href="team.html"
+            style="box-shadow:inset 0 0 0 1px rgba(255,255,255,.28);background:transparent">Meet the team</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pages.js"></script>
+<script>AURORA.UI.boot('reviews.html', AURORA.pages.reviews);</script>
+</body>
+</html>

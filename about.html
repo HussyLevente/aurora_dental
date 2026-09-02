@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — Aurora Dental Studio</title>
+<meta name="description" content="Aurora opened in 2009 in a two-chair room on Váci utca. Seventeen years, three studios and 24,000 patients later, the rules have not changed.">
+<link rel="icon" href="imgs/dental_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:ital,wght@0,300..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/pages.css">
+<script>
+  (function (h) {
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) h.classList.add('motion');
+    try { if (sessionStorage.getItem('aurora.nav') === '1') { h.classList.add('nav-in'); sessionStorage.removeItem('aurora.nav'); } } catch (e) {}
+  })(document.documentElement);
+</script>
+</head>
+<body>
+
+<main>
+
+  <!-- ============================================================ HERO -->
+  <section class="phero">
+    <div class="phero__aur" aria-hidden="true"></div>
+    <div class="shell">
+      <div class="phero__crumb">
+        <a class="label ulink" href="index.html">Home</a>
+        <span class="label" style="color:var(--ink-25)">/</span>
+        <span class="label label--ink">About</span>
+      </div>
+      <div class="phero__grid">
+        <h1 class="phero__t" data-split="words" data-now="1">Seventeen years of doing <em>less</em>, on purpose.</h1>
+        <div class="phero__side">
+          <p class="lead" data-rv="up" data-rv-d=".3">
+            Aurora began in 2009 as two chairs in a room above a bookshop. Three studios and
+            twenty-four thousand patients later, the founding rule has never been rewritten:
+            the least intervention that solves the problem is the right one.
+          </p>
+          <div class="flex g2 wrap" data-rv="up" data-rv-d=".4">
+            <span class="tag tag--blue">Founded 2009</span>
+            <span class="tag">3 studios</span>
+            <span class="tag">31 people</span>
+          </div>
+        </div>
+      </div>
+      <figure class="phero__band" data-clip data-cursor="Belváros">
+        <img src="https://images.unsplash.com/photo-1762625570087-6d98fca29531?auto=format&amp;fit=crop&amp;q=80&amp;w=1800"
+             alt="The waiting room at Aurora Belváros" data-par="10">
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============================================================ FOUNDER -->
+  <section class="sec">
+    <div class="shell">
+      <div class="grid" style="align-items:start">
+        <div style="grid-column:1/5" data-rv="up">
+          <figure class="arch mzoom" style="aspect-ratio:.78" data-cursor="Dr. Kelemen">
+            <img class="cover" src="https://images.pexels.com/photos/32254667/pexels-photo-32254667.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"
+                 alt="Dr. Nóra Kelemen, founder of Aurora Dental Studio">
+          </figure>
+          <div class="mt3">
+            <div class="tcard__n">Dr. Nóra Kelemen</div>
+            <div class="tcard__r">Founder &amp; Clinical Director</div>
+          </div>
+        </div>
+
+        <div style="grid-column:6/13">
+          <span class="label"><span class="dot"></span>01 — Why any of this exists</span>
+          <blockquote class="mt4" style="font-family:var(--display);font-weight:250;
+            font-size:clamp(1.7rem,3.6vw,3rem);line-height:1.06;letter-spacing:-.04em" data-split="words">
+            “I spent eight years in practices where the appointment was fifteen minutes and the
+            price appeared at the end. I did not want to work that way, and I certainly did not
+            want to be treated that way.”
+          </blockquote>
+          <div class="grid mt6" style="grid-template-columns:repeat(2,1fr);gap:2.4rem">
+            <p class="body-lg" data-rv="up">
+              The practice was designed backwards from that sentence. Longer slots so nobody feels
+              rushed. Written quotes so nobody feels ambushed. A rule that the first visit treats
+              nothing, so nobody is talked into anything while numb and half-reclined.
+            </p>
+            <p class="body-lg" data-rv="up" data-rv-d=".1">
+              It is not a business model anyone would recommend on a spreadsheet. It turns out to
+              be an extremely good one anyway: sixty-one percent of the people who walk through
+              the door were sent by somebody who already had.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ STATS -->
+  <section class="sec--sm">
+    <div class="shell">
+      <div class="sband" id="aboutStats"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ VALUES -->
+  <section class="sec bone">
+    <div class="shell">
+      <div class="shead mb6">
+        <div class="shead__aside">
+          <span class="label"><span class="dot"></span>02 — What we hold to</span>
+          <p class="shead__meta">Six rules, written down in year one and enforced since. They cost us money regularly, which is roughly how you know they are real.</p>
+        </div>
+        <h2 class="dsp shead__t" data-split="words">Six rules we have never quietly dropped.</h2>
+      </div>
+      <div class="vgrid" id="valuesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ GALLERY -->
+  <section class="sec">
+    <div class="shell">
+      <div class="shead mb6">
+        <div class="shead__aside">
+          <span class="label"><span class="dot"></span>03 — The rooms</span>
+          <p class="shead__meta">Designed by people who have spent a lot of time looking at ceilings from a reclined position.</p>
+        </div>
+        <h2 class="dsp shead__t" data-split="words">Daylight, wherever the building allowed it.</h2>
+      </div>
+      <div class="pgal">
+        <figure class="pgal__a" data-clip data-cursor="Treatment room">
+          <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&amp;fit=crop&amp;q=80&amp;w=1100"
+               alt="A treatment room with daylight" data-par="12">
+        </figure>
+        <figure class="pgal__b" data-clip data-cursor="Consulting">
+          <img src="https://images.unsplash.com/photo-1704455306251-b4634215d98f?auto=format&amp;fit=crop&amp;q=80&amp;w=1400"
+               alt="A consultation desk" data-par="9">
+        </figure>
+        <figure class="pgal__c" data-clip data-cursor="Reception">
+          <img src="https://images.unsplash.com/photo-1704455306925-1401c3012117?auto=format&amp;fit=crop&amp;q=80&amp;w=1600"
+               alt="Clinical equipment in a bright room" data-par="13">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ TIMELINE -->
+  <section class="sec night">
+    <div class="shell">
+      <div class="shead mb6">
+        <div class="shead__aside">
+          <span class="label"><span class="dot"></span>04 — How it happened</span>
+          <p class="shead__meta" style="color:rgba(255,255,255,.5)">Slowly, and mostly by refusing to grow faster than we could hire well.</p>
+        </div>
+        <h2 class="dsp shead__t" data-split="words">From one borrowed autoclave.</h2>
+      </div>
+      <div id="timeline" style="border-color:rgba(255,255,255,.14)"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ TECH -->
+  <section class="sec">
+    <div class="shell">
+      <div class="method__grid">
+        <div class="method__stick">
+          <span class="label"><span class="dot"></span>05 — Equipment</span>
+          <h2 class="mt3" style="font-size:var(--fs-h2)" data-split="words">Bought to remove guesswork, not to impress anyone.</h2>
+          <p class="small muted mw-xs mt3">Every item here earns its place by making a decision more certain or an appointment shorter. Nothing was purchased because it looked good in a brochure.</p>
+          <figure class="method__fig hide-mob" data-clip>
+            <img src="https://images.unsplash.com/photo-1593022356769-11f762e25ed9?auto=format&amp;fit=crop&amp;q=80&amp;w=900"
+                 alt="A dental implant model" data-par="9">
+          </figure>
+        </div>
+        <div id="techList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CAREERS -->
+  <section class="sec bone">
+    <div class="shell">
+      <div class="qa">
+        <div>
+          <span class="label"><span class="dot"></span>06 — Working here</span>
+          <h2 class="mt3" style="font-size:var(--fs-h2)" data-split="words">We hire slowly and keep people a long time.</h2>
+        </div>
+        <div>
+          <p class="body-lg mw-md">
+            Aurora has lost two clinicians in seventeen years. That is partly the longer appointments —
+            it is a considerably better way to spend a working day — and partly that nobody here has a
+            treatment target, because we have never set one.
+          </p>
+          <p class="body-lg mw-md mt3">
+            We are usually looking for hygienists and a dental nurse or two. If you have read this far
+            and recognised something, write to us even when nothing is advertised.
+          </p>
+          <div class="flex g2 mt4 wrap">
+            <span class="mag"><a class="btn" href="mailto:hello@auroradental.hu?subject=Working%20at%20Aurora">Write to us
+              <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a></span>
+            <span class="mag"><a class="btn btn--ghost" href="team.html">Meet the team</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CTA -->
+  <section class="cta">
+    <div class="cta__aur" aria-hidden="true"></div>
+    <div class="shell cta__in">
+      <h2 class="cta__t" data-split="words">Enough about us. <em>Come and see.</em></h2>
+      <div class="col g3">
+        <p class="lead" style="color:rgba(255,255,255,.66)">
+          Forty-five minutes, 18,000 Ft, and a written plan you are free to ignore.
+        </p>
+        <div class="flex g2 wrap">
+          <span class="mag"><a class="btn btn--white btn--lg" href="booking.html">Book a first visit
+            <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a></span>
+          <span class="mag"><a class="btn btn--lg" href="locations.html"
+            style="box-shadow:inset 0 0 0 1px rgba(255,255,255,.28);background:transparent">Find a studio</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pages.js"></script>
+<script>AURORA.UI.boot('about.html', AURORA.pages.about);</script>
+</body>
+</html>

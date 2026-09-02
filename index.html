@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurora Dental Studio — Budapest</title>
+<meta name="description" content="Aurora is a three-studio dental practice in Budapest. Longer appointments, written prices, and nothing treated on the first visit unless it hurts.">
+<link rel="icon" href="imgs/dental_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:ital,wght@0,300..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/pages.css">
+<script>
+  (function (h) {
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) h.classList.add('motion');
+    try { if (sessionStorage.getItem('aurora.nav') === '1') { h.classList.add('nav-in'); sessionStorage.removeItem('aurora.nav'); } } catch (e) {}
+  })(document.documentElement);
+</script>
+</head>
+<body>
+
+<main>
+
+  <!-- ============================================================ HERO -->
+  <section class="hero" data-hero>
+    <div class="hero__aur" aria-hidden="true"></div>
+    <div class="shell">
+      <div class="hero__grid">
+
+        <div class="hero__l">
+          <div class="hero__eyebrow">
+            <span class="label label--ink"><span class="dot"></span>Aurora Dental Studio</span>
+            <span class="label">Budapest — since 2009</span>
+          </div>
+
+          <h1 class="hero__ttl" data-split="words" data-now="1">
+            A calmer
+            <img class="chip-img" src="https://images.unsplash.com/photo-1489278353717-f64c6ee8a4d2?auto=format&amp;fit=crop&amp;q=80&amp;w=400" alt="" aria-hidden="true">
+            kind of <em>dentistry</em>, three studios deep.
+          </h1>
+
+          <div class="hero__sub">
+            <p class="lead mw-sm" data-rv="up" data-rv-d=".35">
+              Longer appointments. Written prices before anything begins. And unless
+              you are in pain, nothing at all gets treated on the first visit.
+            </p>
+            <div class="flex g2 wrap" data-rv="up" data-rv-d=".45">
+              <span class="mag"><a class="btn btn--lg" href="booking.html">Book a visit
+                <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a></span>
+              <span class="mag"><a class="btn btn--lg btn--ghost" href="services.html">See treatments</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__r">
+          <figure class="hero__fig" data-hero-fig data-cursor="Our studios">
+            <img src="https://images.unsplash.com/photo-1667133295315-820bb6481730?auto=format&amp;fit=crop&amp;q=80&amp;w=1200"
+                 alt="A dentist scanning a patient with an intraoral camera at Aurora" data-par="9">
+          </figure>
+          <div class="hero__badge" data-hero-badge>
+            <div class="label">Next available</div>
+            <div style="font-family:var(--display);font-size:1.5rem;letter-spacing:-.035em;margin-top:.5rem;line-height:1"
+                 id="heroNext">—</div>
+            <div class="xs muted mt1" id="heroNextSub">Aurora Belváros</div>
+            <a class="alink mt2" href="booking.html"><span class="c">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9L9 3M4 3h5v5"/></svg>
+            </span>Take this slot</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero__strip" data-hero-strip>
+        <div class="hero__stat"><div class="n"><span data-count="24000" data-suffix="+">0</span></div>
+          <div class="c">Patients registered across three Budapest studios</div></div>
+        <div class="hero__stat"><div class="n"><span data-count="4.9" data-dec="1">0</span></div>
+          <div class="c">Average from 1,240 verified independent reviews</div></div>
+        <div class="hero__stat"><div class="n"><span data-count="61" data-suffix="%">0</span></div>
+          <div class="c">Of new patients arrive by personal recommendation</div></div>
+        <div class="hero__stat"><div class="n"><span data-count="31">0</span></div>
+          <div class="c">Clinicians, hygienists, technicians and coordinators</div></div>
+      </div>
+    </div>
+
+    <div class="hero__scroll hide-mob" aria-hidden="true">
+      <span class="label" style="writing-mode:vertical-rl;letter-spacing:.22em">Scroll</span>
+      <span class="ln"><i></i></span>
+    </div>
+  </section>
+
+  <!-- ============================================================ MARQUEE -->
+  <section class="sec--sm" style="padding-block:clamp(2rem,4vw,3.4rem);border-block:1px solid var(--line)">
+    <div id="mqSpecialties"></div>
+  </section>
+
+  <!-- ============================================================ STATEMENT -->
+  <section class="sec">
+    <div class="shell">
+      <div class="shead">
+        <div class="shead__aside">
+          <span class="label"><span class="dot"></span>01 — The practice</span>
+          <p class="shead__meta">Founded by Dr. Nóra Kelemen in a two-chair room above a bookshop on Váci utca. Three studios later, the rules have not changed.</p>
+        </div>
+        <div>
+          <h2 class="dsp" data-split="words">We built the practice
+            we could never find as patients.</h2>
+          <div class="grid mt6" style="grid-template-columns:repeat(12,1fr)">
+            <p class="body-lg" style="grid-column:1/6" data-rv="up">
+              Most dental anxiety is not about pain. It is about not knowing — what is happening,
+              what it will cost, whether you are being sold something. So we removed the unknowns
+              one at a time until what was left felt calm.
+            </p>
+            <p class="body-lg" style="grid-column:7/12" data-rv="up" data-rv-d=".1">
+              Appointments here run about a third longer than the industry average. Every plan is
+              written down and priced before a single instrument comes out. And the ceramics lab
+              is thirty steps from the chair, so the person making your crown can see your face.
+            </p>
+          </div>
+          <div class="mt6" data-rv="up">
+            <a class="alink" href="about.html"><span class="c">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9L9 3M4 3h5v5"/></svg>
+            </span>Read the whole story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ IMAGE BAND -->
+  <section class="sec--flush-t" style="padding-bottom:var(--sec)">
+    <div class="shell">
+      <div class="pgal">
+        <figure class="pgal__a" data-clip data-cursor="Belváros">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&amp;fit=crop&amp;q=80&amp;w=1100"
+               alt="The reception area at Aurora Belváros" data-par="11">
+        </figure>
+        <figure class="pgal__b" data-clip data-cursor="Andrássy">
+          <img src="https://images.unsplash.com/photo-1616391182219-e080b4d1043a?auto=format&amp;fit=crop&amp;q=80&amp;w=1400"
+               alt="A treatment room at Aurora Andrássy" data-par="14">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ METHOD -->
+  <section class="sec bone" id="method">
+    <div class="shell">
+      <div class="shead mb6">
+        <div class="shead__aside">
+          <span class="label"><span class="dot"></span>02 — How it works</span>
+          <p class="shead__meta">The same five steps for a filling and for a full-arch reconstruction. Only the middle one changes length.</p>
+        </div>
+        <h2 class="dsp shead__t" data-split="words">Five steps, and you can stop after any of them.</h2>
+      </div>
+
+      <div class="method__grid">
+        <div class="method__stick">
+          <span class="label label--blue">The Aurora method</span>
+          <p class="small muted mw-xs">Nothing in this sequence commits you to the next thing. Most patients take the plan home and come back a fortnight later.</p>
+          <figure class="method__fig hide-mob" data-clip>
+            <img src="https://images.unsplash.com/photo-1704455306251-b4634215d98f?auto=format&amp;fit=crop&amp;q=80&amp;w=900"
+                 alt="A consultation desk at Aurora" data-par="9">
+          </figure>
+        </div>
+
+        <div>
+          <article class="mstep">
+            <div class="mstep__n">01</div>
+            <div>
+              <h3 class="mstep__t">Say hello, however you like</h3>
+              <p class="mstep__d">Book online in about ninety seconds, call, or send a photograph if something has broken and you want to know how worried to be. If you are travelling in from abroad, we start with your existing scans.</p>
+              <div class="mstep__tags"><span class="tag">Online booking</span><span class="tag">Phone</span><span class="tag">Remote consult</span></div>
+            </div>
+          </article>
+
+          <article class="mstep">
+            <div class="mstep__n">02</div>
+            <div>
+              <h3 class="mstep__t">Forty-five minutes at a desk</h3>
+              <p class="mstep__d">We examine, scan and photograph, then sit down somewhere that is not a dental chair and go through what we found on a screen. You will see your own teeth at a size you have never seen them before.</p>
+              <div class="mstep__tags"><span class="tag">Intraoral scan</span><span class="tag">3D imaging when it changes the plan</span></div>
+            </div>
+          </article>
+
+          <article class="mstep">
+            <div class="mstep__n">03</div>
+            <div>
+              <h3 class="mstep__t">A written plan, priced line by line</h3>
+              <p class="mstep__d">Sequenced by urgency, with the cost of every item and the option of doing none of it. Where there is a cheaper route that works, it is listed alongside the one we would choose. You take it home.</p>
+              <div class="mstep__tags"><span class="tag">Fixed quote</span><span class="tag">Alternatives listed</span><span class="tag">No expiry</span></div>
+            </div>
+          </article>
+
+          <article class="mstep">
+            <div class="mstep__n">04</div>
+            <div>
+              <h3 class="mstep__t">Treatment, at your pace</h3>
+              <p class="mstep__d">Booked in blocks that suit your calendar rather than ours, with the lab in the building so ceramics are usually same-day. If something unexpected appears, we stop and re-quote before continuing. Always.</p>
+              <div class="mstep__tags"><span class="tag">In-house lab</span><span class="tag">Sedation available</span><span class="tag">0% instalments</span></div>
+            </div>
+          </article>
+
+          <article class="mstep">
+            <div class="mstep__n">05</div>
+            <div>
+              <h3 class="mstep__t">Keeping it that way</h3>
+              <p class="mstep__d">A hygiene rhythm set to your actual risk, not a generic six months. This is the unglamorous part that decides whether the work lasts ten years or thirty — and it is the only condition on our guarantees.</p>
+              <div class="mstep__tags"><span class="tag">Risk-based recall</span><span class="tag">Guarantee up to 10 years</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ TREATMENTS (pinned horizontal) -->
+  <section class="hsc" id="treatments">
+    <div class="hsc__vp">
+      <div class="shell hsc__head hide-mob">
+        <div class="shead" style="border:0;padding:0">
+          <div class="shead__aside">
+            <span class="label"><span class="dot"></span>03 — Treatments</span>
+          </div>
+          <h2 class="shead__t" style="font-size:var(--fs-h2)">Everything we do, and roughly what it costs.</h2>
+        </div>
+      </div>
+
+      <div class="hsc__track" id="hscTrack"></div>
+      <div class="hsc__prog hide-mob"><i></i></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ TEAM PEEK -->
+  <section class="sec">
+    <div class="shell">
+      <div class="shead mb6">
+        <div class="shead__aside">
+          <span class="label"><span class="dot"></span>04 — The team</span>
+          <p class="shead__meta">Thirty-one people across three studios. Ten of them will treat you; the rest make that possible.</p>
+        </div>
+        <h2 class="dsp shead__t" data-split="words">The people who will actually be in the room.</h2>
+      </div>
+
+      <div class="tpeek" id="teamPeek" data-stagger></div>
+
+      <div class="between mt6 wrap g2">
+        <p class="lead mw-md">Every clinician here has a narrow specialism and a wide referral habit — if your case belongs to someone else in the building, you will be walked down the corridor rather than sent away.</p>
+        <span class="mag"><a class="btn btn--ghost" href="team.html">Meet everyone
+          <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ LOCATIONS -->
+  <section class="sec night">
+    <div class="shell">
+      <div class="shead mb6">
+        <div class="shead__aside">
+          <span class="label"><span class="dot"></span>05 — Locations</span>
+          <p class="shead__meta" style="color:rgba(255,255,255,.5)">Belváros, Buda and Andrássy. Same records, same standard, same prices at all three.</p>
+        </div>
+        <h2 class="dsp shead__t" data-split="words">Three studios, none more than twenty minutes apart.</h2>
+      </div>
+      <div class="rows" id="locRows" style="border-color:rgba(255,255,255,.14)"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ REVIEWS -->
+  <section class="sec">
+    <div class="shell">
+      <div class="shead mb6">
+        <div class="shead__aside">
+          <span class="label"><span class="dot"></span>06 — Reviews</span>
+          <p class="shead__meta">Collected on Google, Doctolib and Facebook. We do not filter them and we do not ask for them.</p>
+        </div>
+        <div class="shead__t" style="max-width:none">
+          <div class="flex g4 wrap" style="align-items:flex-end">
+            <div>
+              <div style="font-family:var(--display);font-size:clamp(3.4rem,8vw,6.4rem);font-weight:200;letter-spacing:-.06em;line-height:.85">
+                <span data-count="4.9" data-dec="1">0</span></div>
+              <div class="mt1" id="revStars"></div>
+            </div>
+            <p class="lead mw-xs">Across 1,240 verified reviews, three independent platforms, and seventeen years.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mq" id="revMarquee" style="padding-inline:var(--pad)"></div>
+    <div class="shell mt6">
+      <a class="alink" href="reviews.html"><span class="c">
+        <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9L9 3M4 3h5v5"/></svg>
+      </span>Read all 1,240 reviews</a>
+    </div>
+  </section>
+
+  <!-- ============================================================ MEMBERSHIP -->
+  <section class="sec bone">
+    <div class="shell">
+      <div class="shead mb6">
+        <div class="shead__aside">
+          <span class="label"><span class="dot"></span>07 — Membership</span>
+          <p class="shead__meta">Routine care spread across the year at a fixed monthly figure, with treatment discounted on top.</p>
+        </div>
+        <h2 class="dsp shead__t" data-split="words">Prevention, on a standing order.</h2>
+      </div>
+      <div class="plan" id="planCards" data-stagger></div>
+      <div class="between mt6 wrap g2">
+        <p class="small muted mw-md">Cancel any time with a month's notice. Members keep their discount from the day they join — there is no qualifying period.</p>
+        <span class="mag"><a class="btn btn--ghost" href="pricing.html">Full price list
+          <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ FAQ -->
+  <section class="sec">
+    <div class="shell">
+      <div class="qa">
+        <div>
+          <span class="label"><span class="dot"></span>08 — Questions</span>
+          <h2 class="mt3" style="font-size:var(--fs-h2)" data-split="words">The things people ask before they book.</h2>
+          <p class="small muted mt3 mw-xs">If yours is not here, the contact page has a form that reaches a human, usually within a working day.</p>
+          <a class="alink mt3" href="contact.html"><span class="c">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9L9 3M4 3h5v5"/></svg>
+          </span>Ask us directly</a>
+        </div>
+        <div id="faqHome"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ CTA -->
+  <section class="cta">
+    <div class="cta__aur" aria-hidden="true"></div>
+    <div class="shell cta__in">
+      <h2 class="cta__t" data-split="words">Come in once. <em>Decide afterwards.</em></h2>
+      <div class="col g3">
+        <p class="lead" style="color:rgba(255,255,255,.66)">
+          A first visit is 18,000 Ft, takes forty-five minutes, and commits you to
+          precisely nothing. Most people book it in under two minutes.
+        </p>
+        <div class="flex g2 wrap">
+          <span class="mag"><a class="btn btn--white btn--lg" href="booking.html">Book online
+            <svg class="ico" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a></span>
+          <span class="mag"><a class="btn btn--lg" href="tel:+3614450290"
+            style="box-shadow:inset 0 0 0 1px rgba(255,255,255,.28);background:transparent">+36 1 445 0290</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="row__hov" aria-hidden="true"><img src="" alt=""></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pages.js"></script>
+<script>AURORA.UI.boot('index.html', AURORA.pages.home);</script>
+</body>
+</html>

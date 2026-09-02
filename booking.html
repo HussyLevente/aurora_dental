@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book an Appointment — Aurora Dental Studio</title>
+<meta name="description" content="Book online at any of Aurora's three Budapest studios in about ninety seconds. Live availability, free cancellation up to 24 hours before.">
+<link rel="icon" href="imgs/dental_logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter+Tight:ital,wght@0,300..700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/pages.css">
+<script>
+  (function (h) {
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) h.classList.add('motion');
+    try { if (sessionStorage.getItem('aurora.nav') === '1') { h.classList.add('nav-in'); sessionStorage.removeItem('aurora.nav'); } } catch (e) {}
+  })(document.documentElement);
+</script>
+</head>
+<body>
+
+<main>
+
+  <!-- ============================================================ HERO -->
+  <section class="phero" style="padding-bottom:clamp(1.5rem,3vh,2.4rem)">
+    <div class="phero__aur" aria-hidden="true"></div>
+    <div class="shell">
+      <div class="phero__crumb">
+        <a class="label ulink" href="index.html">Home</a>
+        <span class="label" style="color:var(--ink-25)">/</span>
+        <span class="label label--ink">Book</span>
+      </div>
+      <div class="phero__grid">
+        <h1 class="phero__t" data-split="words" data-now="1">About <em>ninety seconds.</em></h1>
+        <div class="phero__side">
+          <p class="lead" data-rv="up" data-rv-d=".3">
+            Live availability across all three studios. Nothing is charged now — you pay at the
+            studio, after the appointment — and you can move or cancel free up to 24 hours before.
+          </p>
+          <div class="flex g2 wrap" data-rv="up" data-rv-d=".4">
+            <span class="tag tag--blue">No card required</span>
+            <span class="tag">Free cancellation</span>
+            <span class="tag">Same-day emergencies</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ WIZARD -->
+  <section class="sec--sm" style="padding-top:clamp(1.5rem,3vw,2.6rem)">
+    <div class="shell">
+      <div class="wiz" id="wiz">
+        <div>
+          <div class="wiz__steps" id="wizSteps"></div>
+          <div id="wizPanels"></div>
+          <div class="wiz__nav" id="wizNav"></div>
+        </div>
+        <aside class="wiz__aside" id="wizAside"></aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ MY APPOINTMENTS -->
+  <section class="sec--sm">
+    <div class="shell">
+      <div style="max-width:900px" id="myAppts"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================ REASSURANCE -->
+  <section class="sec bone">
+    <div class="shell">
+      <div class="shead mb6">
+        <div class="shead__aside">
+          <span class="label"><span class="dot"></span>Before you arrive</span>
+          <p class="shead__meta">Four things worth knowing, so the first appointment holds no surprises at all.</p>
+        </div>
+        <h2 class="dsp shead__t" data-split="words">What actually happens next.</h2>
+      </div>
+
+      <div class="vgrid" style="grid-template-columns:repeat(4,1fr)">
+        <div class="vgrid__i"><div class="tl__y" style="font-size:2rem">01</div>
+          <h3 class="vgrid__t mt2">A confirmation</h3>
+          <p class="vgrid__d">Reference code on screen straight away, and a calendar file you can add in one click.</p></div>
+        <div class="vgrid__i"><div class="tl__y" style="font-size:2rem">02</div>
+          <h3 class="vgrid__t mt2">A reminder</h3>
+          <p class="vgrid__d">The day before, by text and email — unless you told us not to when you booked.</p></div>
+        <div class="vgrid__i"><div class="tl__y" style="font-size:2rem">03</div>
+          <h3 class="vgrid__t mt2">Ten minutes early</h3>
+          <p class="vgrid__d">On a first visit only, for a short medical history. After that, arrive on the minute.</p></div>
+        <div class="vgrid__i"><div class="tl__y" style="font-size:2rem">04</div>
+          <h3 class="vgrid__t mt2">No treatment</h3>
+          <p class="vgrid__d">Unless you are in pain. You leave with a written plan and decide in your own time.</p></div>
+      </div>
+
+      <div class="note mt6" style="max-width:76ch">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="8" cy="8" r="6.4"/><path d="M8 7.2v4M8 4.9v.1"/></svg>
+        <span>Prefer to speak to someone? Reception answers on
+        <a class="ulink" href="tel:+3614450290"><b>+36 1 445 0290</b></a> from 08:00 to 20:00 on weekdays.
+        For anything urgent outside those hours, the emergency line reaches a clinician directly.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ ANXIETY -->
+  <section class="sec">
+    <div class="shell">
+      <div class="grid" style="align-items:center">
+        <figure style="grid-column:1/6" class="arch mzoom" data-clip data-cursor="Calm">
+          <img class="cover" style="aspect-ratio:.84"
+               src="https://images.pexels.com/photos/4269368/pexels-photo-4269368.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1000"
+               alt="A dentist in conversation with a patient">
+        </figure>
+        <div style="grid-column:7/13">
+          <span class="label"><span class="dot"></span>If booking is the hard part</span>
+          <h2 class="mt3" style="font-size:var(--fs-h2)" data-split="words">Put it in the notes. That is what the box is for.</h2>
+          <p class="body-lg mt4 mw-md">
+            One line — “I have not been in six years”, “I am terrified of the needle”, “I do not want
+            to be told what I should have done differently” — changes how the whole appointment is
+            run before you walk in. Nobody will comment on the gap. It is genuinely the most common
+            thing we see.
+          </p>
+          <a class="alink mt4" href="services.html"><span class="c">
+            <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 9L9 3M4 3h5v5"/></svg>
+          </span>Read about sedation options</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/store.js"></script>
+<script src="js/motion.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/booking.js"></script>
+<script>AURORA.UI.boot('booking.html', AURORA.pages.booking);</script>
+</body>
+</html>
