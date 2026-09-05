@@ -90,7 +90,9 @@
     var dur = instant ? 0 : (parseFloat(el.dataset.dur) || 1.9);
     var start = performance.now();
     function frame(now) {
-      var p = dur === 0 ? 1 : Math.min((now - start) / (dur * 1000), 1);
+      /* a rAF timestamp can predate the performance.now() we captured, which
+         sent the quartic ease negative and flashed a huge minus number */
+      var p = dur === 0 ? 1 : Math.min(Math.max((now - start) / (dur * 1000), 0), 1);
       var eased = 1 - Math.pow(1 - p, 4);
       var v = target * eased;
       el.textContent = A.fmt.num(v, dec) + suffix;

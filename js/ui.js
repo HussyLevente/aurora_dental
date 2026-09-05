@@ -261,8 +261,8 @@
         if (clock) clock.textContent = t;
       } catch (e) { if (clock) clock.textContent = new Date().toTimeString().slice(0, 5); }
       if (openEl) {
-        var o = S.openNow('belvaros');
-        openEl.textContent = '— ' + (o.open ? o.label : (o.label + (o.next ? ', reopens ' + o.next : '')));
+        /* Store.openNow already folds the reopening time into the label */
+        openEl.textContent = '— ' + S.openNow('belvaros').label;
       }
     }
     tick(); setInterval(tick, 20000);
@@ -428,7 +428,7 @@
   }
   function faq(list, limit) {
     return '<div class="acc" data-accordion>' + list.slice(0, limit || list.length).map(function (f, i) {
-      return '<div class="acc__i" data-acc">' +
+      return '<div class="acc__i" data-acc>' +
         '<button class="acc__h" data-acc-h><span class="acc__n">' + String(i + 1).padStart(2, '0') + '</span>' +
         '<span class="acc__t">' + esc(f.q) + '</span><span class="acc__pm"></span></button>' +
         '<div class="acc__b" data-acc-b><div class="acc__bi">' + esc(f.a) + '</div></div></div>';

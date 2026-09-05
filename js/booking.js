@@ -559,6 +559,8 @@
     /* ============================================================
        MY APPOINTMENTS
        ============================================================ */
+    var cancelModal = null;
+
     function renderMine() {
       var host = qs('#myAppts');
       if (!host) return;
@@ -596,7 +598,9 @@
         b.addEventListener('click', function () {
           var rec = S.findBooking(b.dataset.cancel);
           if (!rec) return;
-          var m = UI.modal();
+          /* one modal for the page — building a new one per click stacked up
+             nodes and key handlers that never went away */
+          var m = cancelModal || (cancelModal = UI.modal());
           m.show('<span class="label"><span class="dot"></span>Cancel appointment</span>' +
             '<h3 class="mt3" style="font-size:clamp(1.5rem,3vw,2rem)">Cancel ' + esc(rec.ref) + '?</h3>' +
             '<p class="lead mt2">' + esc(S.service(rec.service).name) + ' on ' + esc(F.long(rec.date)) +
@@ -604,7 +608,10 @@
             '<p class="small muted mt2">More than 24 hours away, so there is no charge.</p>' +
             '<div class="flex g2 mt4 wrap"><button class="btn" id="mYes">Yes, cancel it</button>' +
             '<button class="btn btn--ghost" data-x>Keep it</button></div>');
-          qs('#mYes').addEventListener('click', function () {
+          /* scoped to this modal's own box — a document-wide lookup bound the
+             handler to whichever #mYes came first, so the second cancel of a
+             session did nothing */
+          qs('#mYes', m.box).addEventListener('click', function () {
             S.cancelBooking(rec.ref);
             m.hide();
             renderMine();
